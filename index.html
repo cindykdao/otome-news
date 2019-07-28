@@ -4,6 +4,14 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
    	<title>Otome News</title>
+	<script>
+		$(function () { 
+			$(document).scroll(function () {
+    				var $nav = $("#menu");
+    				$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  			});
+		});
+	</script>
 </head>
 
 <body>
